@@ -1,0 +1,67 @@
+header {
+  background: linear-gradient(red, orange, yellow, blue, green, indigo, violet);
+background-clip: text;
+color: black;
+}
+.me {
+  color: red;
+}
+
+head {
+  background-color: red;
+}
+body {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/3/37/Theodore_Kaczynski.jpg")
+}
+  .wall1 {
+    float:left;
+    background: red;
+    color: black;
+    width: 45%;
+    height: 100px;
+
+  }
+
+  .betweenWall {
+    float:left;
+    color: red;
+    width: 10%;
+    height: 100px;
+  }
+
+  .wall2 {
+    float:right;
+    background: red;
+    color: black;
+    width: 45%;
+    height: 100px;
+}
+
+.simon {
+  background-color: black;
+}
+
+.red {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+}
+.blue {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+}
+.green {
+  background-color: green;
+  height: 200px;
+  width: 200px;
+}
+.yellow {
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+}
+.start {
+  height: 50px;
+  width: 100px;
+}
