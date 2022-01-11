@@ -31,17 +31,17 @@
 <body>
   <div class = "simon">
     <br>
-    <button class = red>
+    <button onclick = "addRed()"; class = red>
     </button>
-    <button class = green>
+    <button onclick = "addGreen()"; class = green>
     </button>
     <br>
-    <button class = blue>
+    <button onclick = "addBlue()"; class = blue>
   </button>
-  <button class = yellow>
+  <button onclick = "addYellow()"; class = yellow>
   </button>
   <br>
-  <button class = "start">
+  <button onclick = "startGame()"; class = "start">
     start
   </button>
     <br>
@@ -60,7 +60,60 @@
 </body>
 
 <script>
+var sequence = [];
+var playerSequence = [];
+var colors = ["Red", "Green", "Blue", "Yellow"];
+function startGame(){
+var lose = false;
+sequence = [];
+console.log("Game has started");
+while(lose == false) {
+playerSequence = [];
+getNextInSequence();
+for(let i = 0; i< sequence.length; i++) {
+  console.log(sequence[i]);
+  onclickplayerSequence.push()
+  if(!playerSequence[i] === sequence[i]) {
+    lose = true;
+    console.log("lose");
+    break;
+  }
+}
 
+}
+for(let i = 0; i< sequence.length; i++)
+{
+  console.log(sequence[i]);
+}
+}
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+function getNextInSequence() {
+  sequence.push(colors[getRandomInt(4)]);
+}
+
+function addRed(){
+  playerSequence.push("Red");
+}
+function addGreen(){
+  playerSequence.push("Green");
+}
+function addBlue(){
+  playerSequence.push("Blue");
+}
+function addYellow(){
+  playerSequence.push("Yellow");
+}
+
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
 </script>
 
 
