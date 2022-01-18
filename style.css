@@ -10,9 +10,6 @@ color: black;
 head {
   background-color: red;
 }
-body {
-  background: url("https://upload.wikimedia.org/wikipedia/commons/3/37/Theodore_Kaczynski.jpg")
-}
   .wall1 {
     float:left;
     background: red;
@@ -64,4 +61,8 @@ body {
 .start {
   height: 50px;
   width: 100px;
+}
+.one {
+  border-style: solid;
+  border-width: 5px;
 }
